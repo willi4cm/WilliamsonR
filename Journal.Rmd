@@ -24,7 +24,7 @@ Do simple math with numbers, addition, subtraction, multiplication, division
 
 ```
 # Problem 2
-Put numbers into variables, do simple math on the variablese
+Put numbers into variables, do simple math on the variables
 ```{r}
 a<-1
 b<-2
@@ -34,5 +34,11 @@ e<-c(5,6,7)
 d+e
 d*e
 d/e
+```
+# Problem 3
+```{r}
+Casey <- 1
+Janani <-2
+Casey + Janani
 ```
 
