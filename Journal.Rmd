@@ -36,9 +36,11 @@ d*e
 d/e
 ```
 # Problem 3
-```{r}
+```{r, eval= FALSE}
 Casey <- 1
 Janani <-2
+Chris <-"fourteen"
 Casey + Janani
+Casey + Chris
 ```
 
