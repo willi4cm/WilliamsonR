@@ -21,23 +21,19 @@ output: html_document
 
 I will be using this website to learn R throughout the course of the semester. All of the projects I complete will be uploaded to this website.
 
-## How to use
+## Content
 
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
+1. The first tab is for my journal, which is where I will be putting all of the different problems I go through.
 
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
-
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
-
-4. Change everything to make it your own.
+2. Next, you will see different links that are helpful for learning R.
 
 
 </div>
 <div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
+### [Casey Williamson: R class Journal](https://willi4cm.github.io)
 
-<a href = "https://crumplab.github.io">
-![](images/logo.png)
+<a href = "https://willi4cm.github.io">
+![](images/Roscoe Dash.png)
 </a>
 </div>
