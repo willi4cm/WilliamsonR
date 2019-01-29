@@ -36,11 +36,22 @@ d*e
 d/e
 ```
 # Problem 3
+Precedence
 ```{r}
-Casey <- 1
-Janani <-2
+2+4+6/4
+(2+4+6)/4
+
+```
+# Problem 4
+Variables
+```{r}
+Casey <-7
+Janani <-4
 Chris <-14
-Casey + Janani
-Casey + Chris
+Roscoe <-"R"
+myvector <-c(7,4,14)
+anothervector <-c("C","B","A")
+Casey+Chris
+Casey+myvector
 ```
 
