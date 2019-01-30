@@ -64,10 +64,16 @@ sum(seq)
 ```
 # Problem 6
 List all of the prime numbers from 1 to 1000.
-Totally lost on this one.
+I found a code on the internet that works, though I don't understand what each part is doing.
 ```{r}
+is.prime <- function(x) {
+  x <- abs(as.integer(x))
+  !grepl('^1?$|^(11+?)\\1+$', strrep('1', x))
+}
 
+(1:1000)[is.prime(1:1000)]
 ```
+
 # Problem 7
 Generate 100 random numbers
 I'm not sure how to get runif to do whole numbers
@@ -80,9 +86,10 @@ runif(100)
 Generate 100 random numbers within a specific range
 Not sure how to get runif to do whole numbers
 ```{r}
-sample.int(100,50)
-runif(100,1,50)
+sample(50:80,100, replace = TRUE)
+runif(100,50,80)
 ```
 
 ```
+
 
