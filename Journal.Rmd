@@ -36,22 +36,53 @@ d*e
 d/e
 ```
 # Problem 3
-Precedence
+Write code that will place the numbers 1 to 100 separately into a variable using for loop. Then, again using the seq function.
 ```{r}
-2+4+6/4
-(2+4+6)/4
-
+for (number in 1:100){
+  cat(number, "\n")
+}
 ```
 # Problem 4
-Variables
+Find the sum of all the integer numbers from 1 to 100.
 ```{r}
-Casey <-7
-Janani <-4
-Chris <-14
-Roscoe <-"R"
-myvector <-c(7,4,14)
-anothervector <-c("C","B","A")
-Casey+Chris
-Casey+myvector
+sum(1:100)
+```
+# Problem 5
+Using a for loop to sum 1 through 100
+I'm having trouble with this one. I don't really understand what I'm doing
+```{r}
+# Sequence
+seq <- c(1:100)
+
+# Print loop
+for (value in seq) {
+    print(seq)
+}
+
+# A sum variable
+sum(seq)
+```
+# Problem 6
+List all of the prime numbers from 1 to 1000.
+Totally lost on this one.
+```{r}
+
+```
+# Problem 7
+Generate 100 random numbers
+I'm not sure how to get runif to do whole numbers
+```{r}
+sample.int(100)
+
+runif(100)
+```
+# Problem 8
+Generate 100 random numbers within a specific range
+Not sure how to get runif to do whole numbers
+```{r}
+sample.int(100,50)
+runif(100,1,50)
+```
+
 ```
 
