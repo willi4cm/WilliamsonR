@@ -11,7 +11,7 @@
 
 
 
-<title>MyLabJournal</title>
+<title>R Instrinsics</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -302,34 +302,102 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">MyLabJournal</h1>
+<h1 class="title toc-ignore">R Instrinsics</h1>
 
 </div>
 
 
-<style type="text/css">
-.title {
-  display: none;
-}
-
-#getting-started img {
-  margin-right: 10px;
-}
-
-</style>
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
-<h1 id="my-lab-journal"><strong>My Lab Journal</strong></h1>
-<p>I will be using this website to learn R throughout the course of the semester. All of the projects I complete will be uploaded to this website.</p>
-<h2 id="content">Content</h2>
-<ol style="list-style-type: decimal">
-<li><p>The first tab is for my journal, which is where I will be putting all of the different problems I go through.</p></li>
-<li><p>Next, you will see different links that are helpful for learning R.</p></li>
-</ol>
+<div id="built-in-r-functions" class="section level1">
+<h1><strong>Built in R Functions</strong></h1>
+<p>I will be using this page to go through the different functions that are a part of r coding.</p>
 </div>
-<div class="col-sm-6">
-<h3 id="casey-williamson-r-class-journal"><a href="https://willi4cm.github.io">Casey Williamson: R class Journal</a></h3>
-<p><a href = "https://willi4cm.github.io"> <img src="images/Roscoe%20Dash.png" /> </a></p>
+<div id="help-function" class="section level1">
+<h1>Help Function</h1>
+<p>This function allows you to search different topics to get a description.</p>
+<pre class="r"><code>help(&quot;save&quot;)</code></pre>
+</div>
+<div id="indexing-vectors" class="section level1">
+<h1>Indexing vectors</h1>
+<p>The first allows you to make a vector and the following functions allows you to index that vector.</p>
+<pre class="r"><code>vector &lt;- c(1,2,3,4,5,6,7,5,4,3,1,7,8,6,4)
+vector[5]</code></pre>
+<pre><code>## [1] 5</code></pre>
+<pre class="r"><code>vector[2:7]</code></pre>
+<pre><code>## [1] 2 3 4 5 6 7</code></pre>
+<pre class="r"><code>vector[c(10,10,10,10,10,10,10,10,10,10)]</code></pre>
+<pre><code>##  [1] 3 3 3 3 3 3 3 3 3 3</code></pre>
+<pre class="r"><code>vector[c(2,8,9,5,4,2)]</code></pre>
+<pre><code>## [1] 2 5 4 5 4 2</code></pre>
+<pre class="r"><code>vector[vector &gt; 4]</code></pre>
+<pre><code>## [1] 5 6 7 5 7 8 6</code></pre>
+<pre class="r"><code>vector[vector == 5]</code></pre>
+<pre><code>## [1] 5 5</code></pre>
+<pre class="r"><code>vector[vector != 5]</code></pre>
+<pre><code>##  [1] 1 2 3 4 6 7 4 3 1 7 8 6 4</code></pre>
+<pre class="r"><code>vector[8] &lt;- 3000
+vector[1:2] &lt;-c(10,15)
+vector</code></pre>
+<pre><code>##  [1]   10   15    3    4    5    6    7 3000    4    3    1    7    8    6
+## [15]    4</code></pre>
+</div>
+<div id="class" class="section level1">
+<h1>class()</h1>
+<p>This allows you to determine what type of variable you have.</p>
+<pre class="r"><code>d = &quot;Casey&quot;
+a = 2
+class(d)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>class (a)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+</div>
+<div id="variable-converting" class="section level1">
+<h1>Variable Converting</h1>
+<pre class="r"><code>a &lt;-c(&quot;1&quot;,&quot;2&quot;,&quot;3&quot;)
+class(a)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>b &lt;- a
+class(b)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>as.numeric(b)</code></pre>
+<pre><code>## [1] 1 2 3</code></pre>
+</div>
+<div id="list-function" class="section level1">
+<h1>List function</h1>
+<p>This function helps you create lists</p>
+<pre class="r"><code>a &lt;- &quot;abcdefghijklmnop&quot;
+strsplit(a,split=&quot;&quot;)</code></pre>
+<pre><code>## [[1]]
+##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot;</code></pre>
+<pre class="r"><code>b &lt;- a
+b &lt;-strsplit(a,split=&quot;&quot;)
+b[[1]][3]</code></pre>
+<pre><code>## [1] &quot;c&quot;</code></pre>
+<pre class="r"><code>class(b)</code></pre>
+<pre><code>## [1] &quot;list&quot;</code></pre>
+</div>
+<div id="getting-rid-of-a-list" class="section level1">
+<h1>Getting rid of a list</h1>
+<pre class="r"><code>a &lt;-&quot;qrstuvwxyz&quot;
+b &lt;- unlist(strsplit(a,split=&quot;&quot;))
+class(a)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>class(b)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+</div>
+<div id="data-frame" class="section level1">
+<h1>data frame</h1>
+<pre class="r"><code>first_names &lt;- c(&quot;francis&quot;, &quot;jean&quot;, &quot;lou&quot;)
+ages &lt;- c(20,25,23)
+grades &lt;- c(99,70,84)
+everybody &lt;- data.frame(first_names, ages, grades)
+print(everybody)</code></pre>
+<pre><code>##   first_names ages grades
+## 1     francis   20     99
+## 2        jean   25     70
+## 3         lou   23     84</code></pre>
+<pre class="r"><code>everybody$first_names</code></pre>
+<pre><code>## [1] francis jean    lou    
+## Levels: francis jean lou</code></pre>
 </div>
 
 
